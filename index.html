@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Metadata Dasar -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio pribadi Kholit, mahasiswa Ilmu Komputer. Menampilkan keahlian, proyek, dan informasi kontak.">
+  <title>Kholit | Portofolio</title>
+
+  <!-- Google Fonts: Inter (teks utama) dan JetBrains Mono (aksen) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Berkas CSS Utama -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigasi Utama (Sticky Header) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#beranda" class="logo">Kholit<span class="logo-dot">.</span></a>
+
+      <!-- Tombol Hamburger untuk Tampilan Seluler -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Menu Navigasi -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#skill" class="nav-link">Skill</a></li>
+          <li><a href="#proyek" class="nav-link">Proyek</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Section 1: Beranda (Hero) -->
+    <section id="beranda" class="section hero-section reveal">
+      <div class="container hero-container">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Kholit</h1>
+        <p class="hero-role">Mahasiswa Ilmu Komputer</p>
+        <p class="hero-desc">Saya seorang pembelajar yang berfokus pada pengembangan web dan rekayasa perangkat lunak untuk membangun solusi digital yang efisien.</p>
+        <div class="hero-actions">
+          <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Tentang -->
+    <section id="tentang" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Tentang</h2>
+        <div class="about-card">
+          <!-- Foto profil placeholder berbentuk kotak bulat dengan inisial K -->
+          <div class="about-avatar" role="img" aria-label="Foto profil placeholder dengan inisial K">
+            <span>K</span>
+          </div>
+          <div class="about-text">
+            <p>Saya adalah mahasiswa aktif program studi Ilmu Komputer yang memiliki antusiasme tinggi terhadap pengembangan web modern. Saya senang mendalami bagaimana teknologi dapat digunakan untuk menciptakan antarmuka yang ramah pengguna, responsif, dan mudah diakses di berbagai perangkat.</p>
+            <p>Di samping kegiatan perkuliahan, saya aktif mengasah keterampilan pemrograman melalui berbagai eksperimen proyek mandiri serta mempelajari praktik terbaik dalam penulisan kode yang bersih dan terstruktur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Skill -->
+    <section id="skill" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Skill</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-card">
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <h3>PHP</h3>
+          </div>
+          <div class="skill-card">
+            <h3>MySQL</h3>
+          </div>
+          <div class="skill-card">
+            <h3>Git</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Proyek -->
+    <section id="proyek" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Proyek</h2>
+        <div class="projects-grid">
+          <!-- Kartu Proyek 1 -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img class="project-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23121820' stroke='%231f2833' stroke-width='2'/%3E%3Ctext x='50%25' y='50%25' fill='%238b98a5' font-family='sans-serif' font-size='18' text-anchor='middle' dominant-baseline='middle'%3EPratinjau Proyek 1%3C/text%3E%3C/svg%3E" alt="Pratinjau antarmuka Judul Proyek 1">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Judul Proyek 1</h3>
+              <p class="project-desc">Aplikasi web pengelolaan daftar tugas perkuliahan untuk membantu mahasiswa memantau jadwal dan tenggat waktu secara rapi.</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary">Demo</a>
+                <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kartu Proyek 2 -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img class="project-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23121820' stroke='%231f2833' stroke-width='2'/%3E%3Ctext x='50%25' y='50%25' fill='%238b98a5' font-family='sans-serif' font-size='18' text-anchor='middle' dominant-baseline='middle'%3EPratinjau Proyek 2%3C/text%3E%3C/svg%3E" alt="Pratinjau antarmuka Judul Proyek 2">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Judul Proyek 2</h3>
+              <p class="project-desc">Sistem katalog perpustakaan berbasis web untuk mempermudah pencatatan buku dan pengecekan ketersediaan koleksi bacaan.</p>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary">Demo</a>
+                <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kartu Proyek 3 -->
+          <article class="project-card">
+            <div class="project-image-wrap">
+              <img class="project-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23121820' stroke='%231f2833' stroke-width='2'/%3E%3Ctext x='50%25' y='50%25' fill='%238b98a5' font-family='sans-serif' font-size='18' text-anchor='middle' dominant-baseline='middle'%3EPratinjau Proyek 3%3C/text%3E%3C/svg%3E" alt="Pratinjau antarmuka Judul Proyek 3">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Judul Proyek 3</h3>
+              <p class="project-desc">Portal informasi kegiatan mahasiswa yang menyajikan jadwal agenda seminar dan workshop secara interaktif dan responsif.</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary">Demo</a>
+                <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Kontak -->
+    <section id="kontak" class="section reveal">
+      <div class="container contact-container">
+        <h2 class="section-title">Kontak</h2>
+        <p class="contact-desc">Tertarik untuk mendiskusikan peluang kolaborasi, proyek web, atau sekadar bertukar wawasan seputar teknologi? Silakan hubungi saya melalui tautan di bawah ini.</p>
+        <ul class="contact-links">
+          <li><a href="#" class="btn btn-secondary contact-link">Email</a></li>
+          <li><a href="#" class="btn btn-secondary contact-link">GitHub</a></li>
+          <li><a href="#" class="btn btn-secondary contact-link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Kholit. Dibuat untuk tugas kuliah.</p>
+    </div>
+  </footer>
+
+  <!-- Berkas JavaScript Utama -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
